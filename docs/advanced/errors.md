@@ -110,7 +110,7 @@ When you define an @Action you can handle error within the action and if you do 
 
 ## Handling errors after dispatching an action
 
-If an unhandled exception is thrown inside an action, the error will be propagated to the `ErrorHandler` and you can also catch it subscribing to the `dispatch` Observable. If you subscribe to the `dispatch` Observable the error will be caught twice, once in the ErrorHandler and on your `dispatch` handle.
+If an unhandled exception is thrown inside an action, the error will be propagated to the `ErrorHandler` and you can also catch it by subscribing to the `dispatch` Observable. If you subscribe to the `dispatch` Observable the error will be caught twice, once in the ErrorHandler and on your `dispatch` handle.
 
 ```ts
   @Action(UnhandledError)
